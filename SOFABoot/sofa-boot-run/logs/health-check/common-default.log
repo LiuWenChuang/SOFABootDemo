@@ -1,0 +1,15 @@
+2019-08-16 01:04:46,595 INFO  main                             - SOFABoot HealthCheck Starting!
+2019-08-16 01:04:52,856 INFO  main                             - Found 2 HealthChecker implementation:sofaModuleHealthChecker,sofaComponentHealthChecker
+2019-08-16 01:04:52,864 INFO  main                             - Found 2 HealthIndicator implementation:sofaBootHealthIndicator,diskSpaceHealthIndicator
+2019-08-16 01:04:52,867 INFO  main                             - Found 0 ReadinessCheckCallback implementation: 
+2019-08-16 01:04:52,867 INFO  main                             - Begin SOFABoot HealthChecker readiness check.
+2019-08-16 01:04:52,867 INFO  main                             - HealthChecker[sofaModuleHealthChecker] readiness check fail with 0 retry.
+2019-08-16 01:04:52,927 ERROR main                             - HealthChecker[sofaModuleHealthChecker] readiness check fail with 0 retry; fail details:{"com.liuchuang.service.service-provider":"failed"}; strict mode:true
+2019-08-16 01:04:52,927 INFO  main                             - HealthChecker[sofaComponentHealthChecker] readiness check success with 0 retry.
+2019-08-16 01:04:52,927 ERROR main                             - SOFABoot HealthChecker readiness check result: failed.
+2019-08-16 01:04:52,927 INFO  main                             - Begin SOFABoot HealthIndicator readiness check.
+2019-08-16 01:04:52,927 INFO  main                             - HealthIndicator[diskSpaceHealthIndicator] readiness check success.
+2019-08-16 01:04:52,927 INFO  main                             - SOFABoot HealthIndicator readiness check result: success.
+2019-08-16 01:04:52,927 INFO  main                             - Begin ReadinessCheckCallback readiness check
+2019-08-16 01:04:52,935 INFO  main                             - ReadinessCheckCallback readiness check result: success.
+2019-08-16 01:04:52,935 ERROR main                             - Readiness check result: fail

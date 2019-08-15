@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <modules>
+        <module>service-demo</module>
+        <module>service-facade</module>
+        <module>service-provider</module>
+        <module>service-consumer</module>
+        <module>sofa-boot-run</module>
+    </modules>
+    <!-- 引入 阿里巴巴 基于 springboot的 sofa -->
+    <parent>
+        <groupId>com.alipay.sofa</groupId>
+        <artifactId>sofaboot-dependencies</artifactId>
+        <version>3.1.5</version>
+        <relativePath/>
+    </parent>
+
+    <groupId>com.liuchuang</groupId>
+    <artifactId>SOFABoot</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+
+    <properties>
+        <java.version>1.8</java.version>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.alipay.sofa</groupId>
+            <artifactId>healthcheck-sofa-boot-starter</artifactId>
+        </dependency>
+
+<!--        <dependency>-->
+<!--            <groupId>com.alipay.sofa</groupId>-->
+<!--            <artifactId>test-sofa-boot-starter</artifactId>-->
+<!--        </dependency>-->
+        <!-- 使用 SOFABoot 模块化开发方案，需要引入如下依赖： -->
+        <dependency>
+            <groupId>com.alipay.sofa</groupId>
+            <artifactId>isle-sofa-boot-starter</artifactId>
+        </dependency>
+        <!--   引入 SOFA SOFARPC 中间件  -->
+<!--          <dependency>-->
+<!--              <groupId>com.alipay.sofa</groupId>-->
+<!--              <artifactId>rpc-sofa-boot-starter</artifactId>-->
+<!--          </dependency>-->
+        <!--   引入 SOFA  SOFATracer中间件  -->
+<!--        <dependency>-->
+<!--            <groupId>com.alipay.sofa</groupId>-->
+<!--            <artifactId>tracer-sofa-boot-starter</artifactId>-->
+<!--        </dependency>-->
+        <!--   引入 SOFA SOFALookout 中间件  -->
+<!--        <dependency>-->
+<!--            <groupId>com.alipay.sofa</groupId>-->
+<!--            <artifactId>lookout-sofa-boot-starter</artifactId>-->
+<!--        </dependency>-->
+
+        <!-- 引入 SOFABoot 类隔离 扩展组件 -->
+<!--        <dependency>-->
+<!--            <groupId>com.alipay.sofa</groupId>-->
+<!--            <artifactId>sofa-ark-springboot-starter</artifactId>-->
+<!--        </dependency>-->
+
+
+
+      </dependencies>
+
+      <build>
+          <plugins>
+              <plugin>
+                  <groupId>org.springframework.boot</groupId>
+                  <artifactId>spring-boot-maven-plugin</artifactId>
+              </plugin>
+          </plugins>
+      </build>
+
+  </project>

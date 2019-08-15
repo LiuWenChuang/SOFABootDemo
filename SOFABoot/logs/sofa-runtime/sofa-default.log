@@ -1,0 +1,25 @@
+2019-08-16 00:33:22,727 INFO  main                             - SOFABoot Runtime Starting!
+2019-08-16 00:33:26,989 INFO  main                             - ++++++++++++++++++ ModelCreatingStage of service-demo Start +++++++++++++++++
+2019-08-16 00:33:26,991 INFO  main                             - ++++++++++++++++++ ModelCreatingStage of service-demo End +++++++++++++++++
+2019-08-16 00:33:26,991 INFO  main                             - ++++++++++++++++++ SpringContextInstallStage of service-demo Start +++++++++++++++++
+2019-08-16 00:33:26,992 INFO  main                             - 
+All activated module list(0) >>>>>>>
+
+Modules that could install(0) >>>>>>>
+
+2019-08-16 00:33:26,993 INFO  main                             - ++++++++++++++++++ SpringContextInstallStage of service-demo End +++++++++++++++++
+2019-08-16 00:33:26,993 INFO  main                             - ++++++++++++++++++ ModuleLogOutputStage of service-demo Start +++++++++++++++++
+2019-08-16 00:33:26,994 INFO  main                             - 
+Spring context initialize success module list(0) >>>>>>> [totalTime = 0 ms, realTime = 0 ms]
+
+Spring context initialize failed module list(0) >>>>>>>
+
+Spring bean load time cost list(0) >>>>>>> [totalTime = 0 ms, realTime = 0 ms]
+
+2019-08-16 00:33:26,994 INFO  main                             - ++++++++++++++++++ ModuleLogOutputStage of service-demo End +++++++++++++++++
+2019-08-16 00:53:28,472 INFO  main                             - SOFABoot Runtime Starting!
+2019-08-16 00:55:04,494 INFO  main                             - SOFABoot Runtime Starting!
+2019-08-16 00:55:22,122 INFO  main                             - SOFABoot Runtime Starting!
+2019-08-16 00:55:42,490 INFO  main                             - SOFABoot Runtime Starting!
+2019-08-16 00:56:59,251 INFO  main                             - SOFABoot Runtime Starting!
+2019-08-16 00:57:27,591 INFO  main                             - SOFABoot Runtime Starting!

@@ -1,0 +1,3 @@
+2019-08-16 01:04:52,927 ERROR main                             - HealthChecker[sofaModuleHealthChecker] readiness check fail with 0 retry; fail details:{"com.liuchuang.service.service-provider":"failed"}; strict mode:true
+2019-08-16 01:04:52,927 ERROR main                             - SOFABoot HealthChecker readiness check result: failed.
+2019-08-16 01:04:52,935 ERROR main                             - Readiness check result: fail

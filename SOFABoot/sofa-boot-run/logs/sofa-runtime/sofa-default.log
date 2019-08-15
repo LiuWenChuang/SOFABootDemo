@@ -1,0 +1,67 @@
+2019-08-16 01:04:46,573 INFO  main                             - SOFABoot Runtime Starting!
+2019-08-16 01:04:52,503 INFO  main                             - ++++++++++++++++++ ModelCreatingStage of service-demo Start +++++++++++++++++
+2019-08-16 01:04:52,513 INFO  main                             - ++++++++++++++++++ ModelCreatingStage of service-demo End +++++++++++++++++
+2019-08-16 01:04:52,513 INFO  main                             - ++++++++++++++++++ SpringContextInstallStage of service-demo Start +++++++++++++++++
+2019-08-16 01:04:52,513 INFO  main                             - 
+All activated module list(2) >>>>>>>
+  ├─ com.liuchuang.service.service-consumer
+  └─ com.liuchuang.service.service-provider
+
+Modules that could install(2) >>>>>>>
+  ├─ com.liuchuang.service.service-provider
+  └─ com.liuchuang.service.service-consumer
+
+2019-08-16 01:04:52,523 INFO  main                             - Start install service-demos module: com.liuchuang.service.service-provider
+2019-08-16 01:04:52,786 INFO  sofa-module-start-com.liuchuang.service.service-provider - Begin refresh Spring Application Context of module com.liuchuang.service.service-provider of application service-demo.
+2019-08-16 01:04:52,844 ERROR sofa-module-start-com.liuchuang.service.service-provider - Refreshing Spring Application Context of module com.liuchuang.service.service-provider got an error.
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sampleJvmService' defined in file [F:\GithubCode\SOFABootDemo\SOFABoot\service-provider\target\classes\META-INF\spring\service-provide.xml]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'java.lang.String' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:767)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:218)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1308)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1154)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:538)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:498)
+	at com.alipay.sofa.isle.spring.factory.BeanLoadCostBeanFactory.createBean(BeanLoadCostBeanFactory.java:49)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:846)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:863)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:546)
+	at com.alipay.sofa.isle.stage.SpringContextInstallStage.doRefreshSpringContext(SpringContextInstallStage.java:279)
+	at com.alipay.sofa.isle.stage.SpringContextInstallStage.access$000(SpringContextInstallStage.java:44)
+	at com.alipay.sofa.isle.stage.SpringContextInstallStage$1.run(SpringContextInstallStage.java:241)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
+	at java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'java.lang.String' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1646)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1205)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1166)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:855)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:758)
+	... 22 common frames omitted
+2019-08-16 01:04:52,854 INFO  main                             - ++++++++++++++++++ SpringContextInstallStage of service-demo End +++++++++++++++++
+2019-08-16 01:04:52,856 INFO  main                             - ++++++++++++++++++ ModuleLogOutputStage of service-demo Start +++++++++++++++++
+2019-08-16 01:04:52,856 INFO  main                             - 
+Spring context initialize success module list(0) >>>>>>> [totalTime = 0 ms, realTime = 0 ms]
+
+Spring context initialize failed module list(1) >>>>>>>
+  └─ com.liuchuang.service.service-provider
+
+Spring bean load time cost list(0) >>>>>>> [totalTime = 0 ms, realTime = 0 ms]
+
+2019-08-16 01:04:52,856 INFO  main                             - ++++++++++++++++++ ModuleLogOutputStage of service-demo End +++++++++++++++++
+2019-08-16 01:04:53,016 INFO  main                             - Registering component: reference:com.liuchuang.service.SampleJvmService:#414599042
+2019-08-16 01:04:53,018 INFO  main                             -  >>In Binding [jvm] Begins - com.liuchuang.service.SampleJvmService.
+2019-08-16 01:04:53,018 INFO  main                             -  >>In Binding [jvm] Ends - com.liuchuang.service.SampleJvmService.
+2019-08-16 01:04:53,018 INFO  main                             - Registering component: reference:com.liuchuang.service.SampleJvmService:annotationImpl#414599042
+2019-08-16 01:04:53,018 INFO  main                             -  >>In Binding [jvm] Begins - com.liuchuang.service.SampleJvmService:annotationImpl.
+2019-08-16 01:04:53,018 INFO  main                             -  >>In Binding [jvm] Ends - com.liuchuang.service.SampleJvmService:annotationImpl.
+2019-08-16 01:04:53,018 INFO  main                             - Registering component: reference:com.liuchuang.service.SampleJvmService:serviceClientImpl#414599042
+2019-08-16 01:04:53,018 INFO  main                             -  >>In Binding [jvm] Begins - com.liuchuang.service.SampleJvmService:serviceClientImpl.
+2019-08-16 01:04:53,018 INFO  main                             -  >>In Binding [jvm] Ends - com.liuchuang.service.SampleJvmService:serviceClientImpl.

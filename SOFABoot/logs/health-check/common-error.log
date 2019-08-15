@@ -1,0 +1,5 @@
+2019-08-16 01:00:19,625 ERROR main                             - HealthChecker[sofaModuleHealthChecker] readiness check fail with 0 retry; fail details:{"com.liuchuang.service.service-provider":"failed"}; strict mode:true
+2019-08-16 01:00:19,630 ERROR main                             - SOFABoot HealthChecker readiness check result: failed.
+2019-08-16 01:00:19,634 ERROR main                             - Readiness check result: fail
+2019-08-16 01:00:21,517 ERROR RMI TCP Connection(5)-169.254.196.86 - HealthChecker[sofaModuleHealthChecker] liveness check fail with 0 retry; fail details:{"com.liuchuang.service.service-provider":"failed"}; strict mode:true
+2019-08-16 01:00:21,517 ERROR RMI TCP Connection(5)-169.254.196.86 - SOFABoot HealthChecker liveness check result: failed.

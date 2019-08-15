@@ -1,0 +1,20 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:sofa="http://sofastack.io/schema/sofaboot"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+            http://sofastack.io/schema/sofaboot   http://sofastack.io/schema/sofaboot.xsd"
+       default-autowire="byName">
+    <!-- 上述的 代码在  https://www.sofastack.tech/projects/sofa-boot/dependency-management/ 最后一部分中 -->
+    <bean id="sampleJvmService" class="com.liuchuang.service.impl.SampleJvmServiceImpl">
+        <property name="message" value="Hello, jvm service xml implementation."/>
+    </bean>
+
+    <bean id="publishServiceWithClient" class="com.liuchuang.service.impl.PublishServiceWithClient" init-method="init"/>
+
+    <bean id="sampleJvmServiceAnnotation" class="com.liuchuang.service.impl.SampleJvmServiceAnnotationImpl"/>
+
+    <sofa:service ref="sampleJvmService" interface="com.liuchuang.service.SampleJvmService">
+        <sofa:binding.jvm/>
+    </sofa:service>
+</beans>
